@@ -1,0 +1,12 @@
+<li>
+    {% if option.option_list %}
+    <a href="{{ option.get_absolute_url }}">{{ option.name }} <i class="icon-arrow-right"></a>
+    <ul class="dropdown-menu sub-menu">
+        {% for opt in option.option_list %}
+        <li>{{ opt }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <a href="{{ option.get_absolute_url }}">{{ option.name }}</a>
+    {% endif %}
+</li>

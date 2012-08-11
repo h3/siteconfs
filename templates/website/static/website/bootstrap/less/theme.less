@@ -1,0 +1,135 @@
+// Theme.less
+// Main theme file. This file should be used to put code
+// specific to your project theme.
+// -----------------------------------------------------
+
+html {
+  background: @grayLighter url(../../../../img/html-bg.png) no-repeat 50% 250px;
+}
+
+body {
+  color: #grayDarker;
+  background: transparent url(../../../../img/body-bg.png) repeat-x 0 0;
+}
+
+// Django
+
+.span5 {
+    .textinput, .textarea { width: 330px; }
+}
+
+// i18n
+
+#lang-switcher {
+    position: absolute;
+    margin: 16px 0 0 900px;
+    input {
+        width: 60px;    
+    }
+}
+
+// Slider
+
+#main-slider, .contact-map {
+  margin-top: 8px;
+  .box-shadow(0 0 14px #000);
+}
+
+// Nav
+
+#project-nav {
+    margin: 40px 0 0 20px;
+    .navbar-inner {
+        filter: none;
+        background: transparent!important;
+        padding-right: 0!important;
+        -webkit-box-shadow: none!important;
+        -moz-box-shadow: none!important;
+        box-shadow: none!important;
+    }
+}
+
+#project-footer {
+    margin-top: 40px;
+    margin-bottom: 0!important;
+    .navbar-inner {
+        .border-radius(0);
+        text-align: center;
+    }
+}
+#copyright {
+    width: 950px;
+    text-align: center;
+    margin: 0 auto;    
+    padding: 20px 0 20px 0;
+    a {
+        img { .opacity(50); }
+        &:hover {
+            img { .opacity(90); }
+        }
+    }
+}
+
+// NAVIGATIONS
+// -----------
+
+.it-nav > li > a {
+    font-size: 1.5em!important;
+    letter-spacing: 0.035em!important;
+    color: @white;
+    &:hover {
+        color: @red!important;    
+    }
+}
+
+.it-nav {
+    font-family: @headingsFontFamily;
+    .dropdown-menu {
+        background: transparent url(../../../../img/submenu-bg.png) repeat 0 0;
+        width: 160px;
+        padding: 10px 0 10px 0;
+        margin-right: -43px;
+        margin-top: 14px;
+        .border-radius(2px);
+        .box-shadow(1px 1px 8px #222);
+        a {
+            color: @white;    
+        }
+    }
+    .active > a, .active > a:hover {
+        background-color: transparent!important;
+    }
+    .dropdown-menu:after {
+        right: 80px!important;
+        border-bottom: 4px solid #7A0808;
+    }
+}
+
+// Contact
+
+.contact-map {
+  margin-top: 8px;   
+    margin-bottom: 18px;
+  .box-shadow(0 0 18px #000);
+  iframe {
+    display: block;    
+  }
+}
+
+// Rich text helpers
+
+.img_left {
+    float: left;
+    margin: 5px 15px 10px 0;   
+}
+
+.img_right {
+    float: right;
+    margin: 5px 0 10px 15px;
+}
+
+.img_block {
+    width: 700px;
+    margin: 10px 0;
+}
+
